@@ -92,15 +92,4 @@ public interface AnalyticsRepo extends JpaRepository<AddtPoEntity, Integer> {
 			Pageable pageable
 	);
 
-
-
-
-
-/*	@Query(value = "select new com.iocl.analytics.dto.MatPacBomDto('100' as BMENG,'L29' as BMEIN, mtpk.idnrk, mtpk.menge, mtpk.meins) from BomInputentity as" +
-			" mtpk where mtpk.matnr in(:material_data) and mtpk.werks in(:plant_data) and mtpk.stlkn in(:stlkn_number)")
-	List<MatPacBomDto> getMatStlknNumber(@Param("material_data") String material,
-										 @Param("plant_data") String plant,
-										 @Param("stlkn_number") String stlkn_number
-	);*/
-
 }
