@@ -617,7 +617,7 @@ public class AnalyticsServicesImpl implements AnalyticsServices {
 						.setValid_to(dateFormat.parse(startAndEndDayMap.get(AnalyticsConstant.END_DATE_OF_NEXT_MONTH)));
 
 				matDtoData.setCreated_on(dateFormat.parse(startAndEndDayMap.get(AnalyticsConstant.CURRENT_DATE)));
-
+//--------------For Pack type---------------
 				if (!matDtoData.getFinish_product().endsWith("000")) {
 
 					logger.info("mat id " + matDtoData.getFinish_product());
@@ -678,7 +678,7 @@ public class AnalyticsServicesImpl implements AnalyticsServices {
 						dateFormat.parse(startAndEndDayMap.get(AnalyticsConstant.END_DATE_OF_NEXT_MONTH)));
 
 				matDtoData.setCreated_on(dateFormat.parse(startAndEndDayMap.get(AnalyticsConstant.CURRENT_DATE)));
-
+//------------------For Material type------------
 				if (matDtoData.getFinish_product().endsWith("000")) {
 					logger.info("mat id for 000:::::   " + matDtoData.getFinish_product());
 					logger.info("Plant ID for 000:::: " + matDtoData.getPlant());
